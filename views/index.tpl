@@ -11,7 +11,7 @@
          <legend>Upplýsingar um notandann</legend>
          <!-- create four text boxes for user input -->
          <div>
-            <label>Nafnið:</label>
+            <label>Nafn:</label>
             <input type = "text" name = "nafn" required="required">
          </div>
          <div>

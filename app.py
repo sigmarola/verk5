@@ -1,6 +1,7 @@
 from bottle import *
 import datetime, time
 import html
+from sys import argv
 @route('/')
 def index():
     return template('index.tpl')
@@ -35,4 +36,5 @@ def pro():
             a+=1
         return template('pros.tpl',info=info,dagur=dagur,pres=pres,titles=titles,timi=timi)
 
-run(debug=True, host='localhost',port='9999')
+#run(debug=True, host='localhost',port='9999')
+bottle.run(host='0.0.0.0', port=argv[1])
